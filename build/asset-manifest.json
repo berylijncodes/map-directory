@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/map-directory/static/css/main.cbb193be.css",
+    "main.js": "/map-directory/static/js/main.dceced3f.js",
+    "index.html": "/map-directory/index.html",
+    "main.cbb193be.css.map": "/map-directory/static/css/main.cbb193be.css.map",
+    "main.dceced3f.js.map": "/map-directory/static/js/main.dceced3f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbb193be.css",
+    "static/js/main.dceced3f.js"
+  ]
+}
