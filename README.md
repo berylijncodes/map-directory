@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The purpose of this assignment is to create a directory app in React, as shown in the example above. For this, you can use the provided API (JSON, GET), which returns several results with "latitude" and "longitude" points (https://en.wikipedia.org/wiki/Geographic_coordinate_system). These points can be placed on the map/list with a pointer. When moving the app (zooming or changing location), the results should be adjusted based on a new API result.
 
 ## Available Scripts
 
