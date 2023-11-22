@@ -41,7 +41,7 @@ function App() {
               className="px-8 border border-gray-200 bg-white rounded-lg shadow h-60"
             >
               <div className="justify-end flex">
-                <button className="bg-[#A38A00] text-white text-sm p-1 max-w-xs capitalize mt-3">
+                <button className="bg-[#A38A00] text-white text-sm p-1 max-w-xs capitalize mt-3" onClick={() => setSelectedLocation({lat: Number(item.latitude), lng: Number(item.longitude) })}>
                   on map
                 </button>
               </div>
