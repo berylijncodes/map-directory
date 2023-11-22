@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
+import MapComponent from "./components/MapComponent";
+
 const url = process.env.REACT_APP_API_URL;
 
 function App() {
+  const [selectedLocation, setSelectedLocation] = useState({
+    lat: 27.664827,
+    lng: -83.915754,
+  });
+
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -18,10 +25,11 @@ function App() {
 
     fetchData();
   }, []);
+
   return (
-    <div className="container mx-auto flex">
-      <div className="bg-gray-100 w-3/5">
-        <div className="px-5 py-2 bg-white shadow-lg border-b">
+    <div className="container mx-auto flex overflow-hidden h-screen">
+      <div className="bg-gray-100 w-3/5 overflow-y-auto">
+        <div className="px-5 py-2 bg-white shadow-lg border-b overflow-y-auto">
           <h4 className="font-medium text-xs uppercase">
             Amount of results: {data.length}
           </h4>
@@ -49,7 +57,7 @@ function App() {
                       {item.category}
                     </p>
                   </div>
-                  <div className="pr-5">
+                  <div className="pr-5 cursor-pointer">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -70,6 +78,11 @@ function App() {
             </div>
           ))}
         </div>
+        <div style={{ height: "0.75rem" }}></div>
+      </div>
+
+      <div className="w-3/5 h-full">
+        <MapComponent selectedLocation={selectedLocation} />
       </div>
     </div>
   );
