@@ -24,7 +24,7 @@ const MapComponent = ({ selectedLocation }) => {
       >
         <MarkerF
           position={selectedLocation}
-          icon={"http://maps.google.com/mapfiles/ms/icons/green-dot.png"}
+          icon={"https://maps.google.com/mapfiles/ms/icons/green-dot.png"}
         />
       </GoogleMap>
     </div>
