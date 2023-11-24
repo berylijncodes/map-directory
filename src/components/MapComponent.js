@@ -1,5 +1,6 @@
 import React from "react";
 import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
+import MarkerIcon from "./MarkerIcon";
 
 const MapComponent = ({ selectedLocation }) => {
   const { isLoaded, loadError } = useLoadScript({
@@ -24,7 +25,7 @@ const MapComponent = ({ selectedLocation }) => {
       >
         <MarkerF
           position={selectedLocation}
-          icon={"https://maps.google.com/mapfiles/ms/icons/green-dot.png"}
+          icon={<MarkerIcon />}
         />
       </GoogleMap>
     </div>
