@@ -25,6 +25,7 @@ const MapComponent = ({ selectedLocation }) => {
       >
         <MarkerF
           position={selectedLocation}
+          draggable= {true}
           icon={<MarkerIcon />}
         />
       </GoogleMap>
